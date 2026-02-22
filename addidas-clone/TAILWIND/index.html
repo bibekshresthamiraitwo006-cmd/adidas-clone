@@ -4,9 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adidas</title>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body class="font-['Inter']">
+    <header class="w-full">
+
+        <!-- announcement bar -->
+        <div class="flex justify-center items-center gap-2 bg-black h-12 text-white">
+            <h4 class="text-sm font-medium tracking-wider">Stock up with 30% OFF</h4>
+            <i class="ri-arrow-down-s-line cursor-pointer"></i>
+        </div>
+
+        <!-- top nav links - desktop only -->
+        <div class="w-full pt-2 px-8 hidden md:flex">
+            <ul class="flex gap-4 justify-end w-full text-xs font-light">
+                <li class="hover:underline cursor-pointer"><a href="#help">help</a></li>
+                <li class="hover:underline cursor-pointer"><a href="#orders">order and returns</a></li>
+                <li class="hover:underline cursor-pointer"><a href="#gift">gift cards</a></li>
+                <li class="hover:underline cursor-pointer"><a href="#adiclub">join adiClub</a></li>
+            </ul>
+        </div>
+
+        <!-- main nav -->
+        <nav class="w-full flex items-center px-8 py-2">
+
+            <!-- logo - desktop only -->
+            <div class="w-1/3 hidden md:block">
+                <img src="assets/images/logo.jpg" alt="logo of adidas" class="w-14 h-14 object-contain">
+            </div>
+
+            <!-- nav links - desktop only -->
+            <div class="hidden md:flex w-1/3 justify-center">
+                <ul class="flex gap-6 items-center text-sm font-semibold md:mr-32">
+                    <li class="hover:underline cursor-pointer"><a href="#men">Men</a></li>
+                    <li class="hover:underline cursor-pointer"><a href="#women">Women</a></li>
+                    <li class="hover:underline cursor-pointer"><a href="#kids">Kids</a></li>
+                    <li class="hover:underline cursor-pointer"><a href="#sports">Sports</a></li>
+                    <li class="hover:underline cursor-pointer"><a href="#sale">Sale</a></li>
+                    <li class="hover:underline cursor-pointer whitespace-nowrap"><a href="#trending">New & Trending</a></li>
+                </ul>
+            </div>
+
+            <!-- icons - desktop only -->
+            <div class="hidden md:flex w-1/3 justify-end items-center gap-3">
+                <div class="flex items-center gap-4 border border-gray-300 px-4 py-2">
+                    <h4 class="text-sm text-gray-500">Search</h4>
+                    <i class="ri-search-line cursor-pointer"></i>
+                </div>
+                <div class="flex gap-3 text-2xl">
+                    <i class="ri-user-line cursor-pointer"></i>
+                    <i class="ri-heart-line cursor-pointer"></i>
+                    <i class="ri-shopping-bag-line cursor-pointer"></i>
+                </div>
+            </div>
+
+            <!-- mobile nav -->
+            <div class="flex md:hidden w-full items-center justify-between">
+
+                <!-- hamburger left -->
+                <div class="text-2xl">
+                    <i class="ri-menu-line cursor-pointer"></i>
+                </div>
+
+                <!-- logo center -->
+                <div>
+                    <img src="assets/images/logo.jpg" alt="logo of adidas" class="w-12 h-12 object-contain">
+                </div>
+
+                <!-- icons right -->
+                <div class="flex items-center gap-3 text-2xl">
+                    <i class="ri-user-line cursor-pointer"></i>
+                    <i class="ri-heart-line cursor-pointer"></i>
+                    <i class="ri-shopping-bag-line cursor-pointer"></i>
+                </div>
+
+            </div>
+
+        </nav> 
+
+    </header>
 </body>
 </html>
