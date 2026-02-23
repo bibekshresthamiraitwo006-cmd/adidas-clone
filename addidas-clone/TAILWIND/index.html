@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body class="font-['Inter']">
+<body class="font-['Inter'] overflow-hidden">
 
     <!---------------------------------- HEADER ---------------------------------------------->
     
@@ -76,10 +76,42 @@
 
     <!---------------------------------- HERO SECTION ---------------------------------------------->
 
-    <section>
-        <div class="min-h-screen">
-            <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_1920,w_1920/global_ss26_adizero_evo_sl_running_ss26_launch_evo_sl_launch_hp_banner_hero_1_d_90af36fe65.jpg" alt="A group of people, likely athletes, are walking together on a paved surface, wearing athletic clothing and shoes." loading="eager" fetchpriority="high">
+    <section class="relative">
+
+        <!-- hero image -->
+        <img 
+            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_1920,w_1920/global_ss26_adizero_evo_sl_running_ss26_launch_evo_sl_launch_hp_banner_hero_1_d_90af36fe65.jpg" 
+            alt="adidas hero" 
+            class="w-full h-[90vh] object-cover block"
+            loading="eager"
+        >
+
+        <!-- text overlay - bottom left -->
+        <div class="absolute bottom-24 left-16">
+
+            <!-- title -->
+            <h2 class="text-xl font-black tracking-wider bg-white px-2 py-1 inline-block mb-2">ADIZERO EVO SL</h2>
+            
+            <!-- subtitle -->
+            <p class="text-black text-sm font-medium bg-white px-2 py-1 mb-4">Feel Fast in all aspects of life.</p>
+
+            <!-- buttons -->
+            <div class="flex gap-3">
+                <a href="#men" class="flex items-center justify-between gap-10 border border-black bg-white text-black text-sm font-bold px-4 py-3 hover:bg-gray-100">
+                    MEN <i class="ri-arrow-right-line"></i>
+                </a>
+                <a href="#women" class="flex items-center justify-between gap-10 border border-black bg-white text-black text-sm font-bold px-4 py-3 hover:bg-gray-100">
+                    WOMEN <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+
         </div>
+
+        <!-- feedback tab - right side -->
+        <div class="absolute top-1/3 -translate-y-1/2 right-0 bg-white border border-gray-300 px-2 py-4 cursor-pointer hover:bg-gray-100">
+            <span class="text-sm text-green-800 font-bold tracking-widest" style="writing-mode: vertical-rl; transform: rotate(180deg)">FEEDBACK</span>
+        </div>
+
     </section>
 
 </body>
