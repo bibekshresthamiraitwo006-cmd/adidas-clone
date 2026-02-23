@@ -9,48 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body class="font-['Inter']">
-    <header class="w-full">
 
+    <!---------------------------------- HEADER ---------------------------------------------->
+    
+    <header>
+        
         <!-- announcement bar -->
-        <div class="flex justify-center items-center gap-2 bg-black h-12 text-white">
-            <h4 class="text-sm font-medium tracking-wider">Stock up with 30% OFF</h4>
+        <div class="flex justify-center items-center gap-2 bg-black h-12 text-white text-sm tracking-wider">
+            <span>Stock up with 30% OFF</span>
             <i class="ri-arrow-down-s-line cursor-pointer"></i>
         </div>
 
         <!-- top nav links - desktop only -->
-        <div class="w-full pt-2 px-8 hidden md:flex">
-            <ul class="flex gap-4 justify-end w-full text-xs font-light">
-                <li class="hover:underline cursor-pointer"><a href="#help">help</a></li>
-                <li class="hover:underline cursor-pointer"><a href="#orders">order and returns</a></li>
-                <li class="hover:underline cursor-pointer"><a href="#gift">gift cards</a></li>
-                <li class="hover:underline cursor-pointer"><a href="#adiclub">join adiClub</a></li>
-            </ul>
-        </div>
+        <ul class="hidden md:flex gap-4 justify-end px-8 pt-2 text-xs font-light">
+            <li><a class="hover:underline" href="#help">help</a></li>
+            <li><a class="hover:underline" href="#orders">order and returns</a></li>
+            <li><a class="hover:underline" href="#gift">gift cards</a></li>
+            <li><a class="hover:underline" href="#adiclub">join adiClub</a></li>
+        </ul>
 
         <!-- main nav -->
-        <nav class="w-full flex items-center px-8 py-2">
-
+        <nav class="flex items-center px-8 py-2">
+            
             <!-- logo - desktop only -->
             <div class="w-1/3 hidden md:block">
-                <img src="assets/images/logo.jpg" alt="logo of adidas" class="w-14 h-14 object-contain">
+                <img src="assets/images/logo.jpg" alt="adidas logo" class="w-14 h-14 object-contain">
             </div>
 
             <!-- nav links - desktop only -->
-            <div class="hidden md:flex w-1/3 justify-center">
-                <ul class="flex gap-6 items-center text-sm font-semibold md:mr-32">
-                    <li class="hover:underline cursor-pointer"><a href="#men">Men</a></li>
-                    <li class="hover:underline cursor-pointer"><a href="#women">Women</a></li>
-                    <li class="hover:underline cursor-pointer"><a href="#kids">Kids</a></li>
-                    <li class="hover:underline cursor-pointer"><a href="#sports">Sports</a></li>
-                    <li class="hover:underline cursor-pointer"><a href="#sale">Sale</a></li>
-                    <li class="hover:underline cursor-pointer whitespace-nowrap"><a href="#trending">New & Trending</a></li>
-                </ul>
-            </div>
+            <ul class="hidden md:flex w-1/3 justify-center gap-6 text-sm font-semibold mr-24">
+                <li><a class="hover:underline whitespace-nowrap" href="#men">Men</a></li>
+                <li><a class="hover:underline whitespace-nowrap" href="#women">Women</a></li>
+                <li><a class="hover:underline whitespace-nowrap" href="#kids">Kids</a></li>
+                <li><a class="hover:underline whitespace-nowrap" href="#sports">Sports</a></li>
+                <li><a class="hover:underline whitespace-nowrap" href="#sale">Sale</a></li>
+                <li><a class="hover:underline whitespace-nowrap" href="#trending">New & Trending</a></li>
+            </ul>
 
             <!-- icons - desktop only -->
             <div class="hidden md:flex w-1/3 justify-end items-center gap-3">
-                <div class="flex items-center gap-4 border border-gray-300 px-4 py-2">
-                    <h4 class="text-sm text-gray-500">Search</h4>
+                <div class="flex items-center gap-4 border border-gray-300 px-4 py-2 text-sm text-gray-500">
+                    <span>Search</span>
                     <i class="ri-search-line cursor-pointer"></i>
                 </div>
                 <div class="flex gap-3 text-2xl">
@@ -61,29 +60,27 @@
             </div>
 
             <!-- mobile nav -->
-            <div class="flex md:hidden w-full items-center justify-between">
-
-                <!-- hamburger left -->
-                <div class="text-2xl">
-                    <i class="ri-menu-line cursor-pointer"></i>
-                </div>
-
-                <!-- logo center -->
-                <div>
-                    <img src="assets/images/logo.jpg" alt="logo of adidas" class="w-12 h-12 object-contain">
-                </div>
-
-                <!-- icons right -->
-                <div class="flex items-center gap-3 text-2xl">
+            <div class="flex md:hidden w-full items-center justify-between text-2xl">
+                <i class="ri-menu-line cursor-pointer"></i>
+                <img src="assets/images/logo.jpg" alt="adidas logo" class="w-12 h-12 object-contain">
+                <div class="flex gap-3">
                     <i class="ri-user-line cursor-pointer"></i>
                     <i class="ri-heart-line cursor-pointer"></i>
                     <i class="ri-shopping-bag-line cursor-pointer"></i>
                 </div>
-
             </div>
 
-        </nav> 
-
+        </nav>
+        
     </header>
+
+    <!---------------------------------- HERO SECTION ---------------------------------------------->
+
+    <section>
+        <div class="min-h-screen">
+            <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_1920,w_1920/global_ss26_adizero_evo_sl_running_ss26_launch_evo_sl_launch_hp_banner_hero_1_d_90af36fe65.jpg" alt="A group of people, likely athletes, are walking together on a paved surface, wearing athletic clothing and shoes." loading="eager" fetchpriority="high">
+        </div>
+    </section>
+
 </body>
 </html>
